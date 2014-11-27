@@ -1,0 +1,80 @@
+<html ng-app="app">
+	<script src="../../../lib/angular.js"></script>
+	<script src="script.js"></script>
+
+	<div ng-controller="AppCtrl" style="margin-bottom: 100px;">
+		
+		<!-- ng-model -->
+		<h2>ng-model</h2>
+		<h4>Ola, {{username}}</h4>
+		<input type="text" ng-model="username" placeholder="type your username">
+		
+		<br>
+		<br>
+		<br>
+		<hr>
+		
+		<!-- ng-click -->
+		<h2>ng-click</h2>
+		<div style="width: 20px; height 20px; background-color:red;"><p><b>{{counter}}</b></p></div>
+		<button ng-click="buttonClicked(this)">Click-me</button>
+
+		<br>
+		<br>
+		<br>
+		<hr>
+
+		<!-- ng-change -->
+		<h2>ng-change</h2>
+		<div>{{checkboxStatus}}</div>
+		<input type="checkbox" ng-model="checkboxStatus" ng-change="checkboxChanged()">
+
+		<br>
+		<br>
+		<br>
+		<hr>
+
+		<!-- scope watch -->
+		<h2>Scope $watch</h2>
+		<input type="text" ng-model="fullName" placeholder="full name">
+
+		<br>
+		<br>
+		<br>
+		<hr>
+
+		<!-- ng-repeat -->
+		<h2>ng-repeat</h2>
+		<!-- <ul>
+			<li ng-repeat="person in people track by $index"> {{$index}} - {{person}}</li>
+		</ul>
+		 -->
+		 <ul>
+		 	<li ng-repeat="person in peopleObjects | filter: filter"> {{$index}} - {{person.name}} - {{person.age}} - {{person.occupation}}</li>
+		 </ul>
+		 <input type="text" ng-model="filter" placeholder="filter" >
+
+		<br>
+		<br>
+		<br>
+		<hr>
+
+		<!-- ng-show -->
+		<h2>ng-show</h2>
+		<div ng-show="visibility" style="background-color: green; width: 8%"><h3>Estou visivel quando tem visibilidade!</h3></div>
+		<button ng-click="changeVisibility()">show/hide</button>
+		
+
+		<br>
+		<br>
+		<br>
+		<hr>
+
+		<!-- ng-hide -->
+		<h2>ng-hide</h2>
+		<div ng-hide="visibility" style="background-color: red; width: 8%"><h3>Quando nao tem visibilidade eu apareço!</h3></div>
+		<button ng-click="changeVisibility()">show/hide</button>
+
+
+	</div>
+</html>

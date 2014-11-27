@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>Login</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="../../../lib/angular.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+	<div ng-controller="AppCtrl">
+		<div id="login-form">
+			<h3>Login</h3>
+			<input type="text" placeholder="username" ng-model="username">
+			<input type="text" placeholder="password" ng-model="password">
+			<button ng-click="login()">login</button>
+			<button ng-click="logout()">logout</button>
+		</div>	
+	</div>
+</body>
+</html>
+
+		

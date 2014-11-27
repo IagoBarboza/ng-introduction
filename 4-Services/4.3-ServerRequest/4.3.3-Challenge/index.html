@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>Challenge-1</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="../../../lib/angular.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+	<div ng-controller="AppCtrl">
+		
+		<ul id="contacts-list">
+			<h2>Agenda</h2>
+			<li ng-repeat="contact in contactsList | filter:filter | orderBy:predicate">
+				<h3>{{contact.Contact.name}}</h3>
+				<p>{{contact.Contact.number}}</p>
+				<p>{{contact.Contact.address}}</p>
+				<button ng-click="removeContact(contact.Contact.id)">Remove</button>
+			</li>
+		</ul>
+
+		<div id="iterables-containter">
+			<div id="form">
+				<h3>Add</h3>
+				<input type="text" placeholder="name" ng-model="name">
+				<input type="text" placeholder="number" ng-model="number">
+				<input type="text" placeholder="address" ng-model="address">
+				<button ng-click="addContact()">submit</button>	
+			</div>
+
+			<div id="search">
+				<h3>Search</h3>
+				<input type="text" placeholder="name" ng-model="filter">
+			</div>
+		</div>
+		
+	</div>
+</body>
+</html>
+
+		

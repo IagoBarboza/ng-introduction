@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>SignUp</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="../../../lib/angular.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+	<div ng-controller="AppCtrl">
+		<div id="signup-form">
+			<h3>SignUp</h3>
+			<input type="text" placeholder="username" ng-model="username">
+			<input type="text" placeholder="password" ng-model="password">
+			<input type="text" placeholder="email" ng-model="email">
+			<input type="text" placeholder="group" ng-model="groupId">
+
+			<button ng-click="signUp()">submit</button>
+		</div>	
+	</div>
+</body>
+</html>
+
+		

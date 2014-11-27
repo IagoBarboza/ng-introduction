@@ -1,0 +1,9 @@
+#signup-form{
+	width: 13%;
+	background-color: gray;
+	text-align: center;
+	margin-top: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	box-shadow: 10px 10px 10px;
+}

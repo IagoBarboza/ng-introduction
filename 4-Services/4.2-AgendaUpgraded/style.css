@@ -1,0 +1,49 @@
+#contacts-list{
+	width: 20%;
+	background-color: gray;
+	list-style: none;
+		box-shadow: 10px 10px 10px;
+}
+
+#contacts-list li{
+	margin-top: 50px;
+	margin-left: -20px;
+	padding-bottom: 20px;
+}
+
+#contacts-list h3:hover{
+	cursor: pointer;
+}	
+
+#contacts-list h2{
+	padding-top: 10px;
+	margin-left: 70px;
+}	
+
+#iterables-containter{
+
+}
+
+#form{
+	width:10%;
+	background-color: gray;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	box-shadow: 10px 10px 10px;
+	position: relative;
+}
+
+#form button{
+	margin-top: 10px;
+}
+
+#search{
+	width:10%;
+	background-color: gray;
+	text-align: center;
+	margin-top: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	box-shadow: 10px 10px 10px;
+}
