@@ -1,0 +1,25 @@
+body{
+	text-align: center;
+}
+
+#wrapper{
+	border: 2px solid black;
+	width: 30%;
+	background-color: gray;
+	margin-left: 35%;
+}
+
+#content{
+	height: 500px;
+	
+}
+
+#toolbar{
+	background-color: gray;
+	border: 2px solid black;
+}
+
+#toolbar button{
+	width: 32.6%;
+	height: 100px;
+}

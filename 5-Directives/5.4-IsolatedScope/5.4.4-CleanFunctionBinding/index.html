@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>Isolated Scope</title>
+	<script src="../../../lib/angular.js"></script>
+	<script src="script.js"></script>
+</head>
+<body >
+	<div ng-controller="AppCtrl">
+		<my-customer customer="camilo" change-address="changeAddress(name)"></my-customer>
+		<br>
+		<my-customer customer="iago" change-address="changeAddress(name)"></my-customer>
+		<br>
+	</div>
+</body>
+</html>
